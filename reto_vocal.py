@@ -1,6 +1,6 @@
 while True:
     # Pedir al usuario una palabra
-    palabra = input("Introduce una palabra para contar c/u de sus vocales: ").lower()
+    palabra = input("Introduce una palabra para contar c/u de sus vocales: ")
 
     # Inicializar contadores para cada vocal
     a_count = 0
