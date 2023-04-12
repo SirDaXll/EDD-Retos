@@ -28,8 +28,8 @@ while True:
         if not encontrado:
             print(f"El número {busqueda} no fue encontrado en el arreglo.\n")
 
-        # Preguntando por el arreglo ya generado
         while True:
+            # Preguntando por el arreglo ya generado
             seguir = input('¿Deseas seguir encontrando números en el arreglo? (Si/No): ').lower()
             aux = True
             if seguir == 'no':
@@ -44,8 +44,8 @@ while True:
         else:
             pass
 
-    # Preguntando para generar otro arreglo
     while True:
+        # Preguntando para generar otro arreglo
         seguir = input('¿Deseas generar otro arreglo de números? (Si/No): ').lower()
         if seguir == 'no':
             print('Saliendo...\n')
