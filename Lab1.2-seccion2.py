@@ -14,3 +14,7 @@ for i in range(filas):
         elem = random.randint(0,10)
         m[i][j] = elem
 print('La matriz generada es:\n',m)
+
+# Multiplicación
+mr = m*escalar
+print(f'La matriz resultante de la multiplicación con el escalar {escalar} es:\n',mr)
