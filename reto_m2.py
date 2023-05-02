@@ -4,9 +4,12 @@ import random
 
 filas = int(input('Ingrese la cantidad de filas de la matriz: '))
 columnas = int(input('Ingrese la cantidad de columnas de la matriz: '))
-
-# Hacer un bucle hasta ingresar un entero
-escalar = int(input('Ingrese el escalar entero que multiplicará la matriz: '))
+while True:
+    try:
+        escalar = int(input('Ingrese el escalar entero que multiplicará la matriz: '))
+        break
+    except ValueError:
+        print('El valor ingresado no es un número entero. Intente nuevamente.')
 
 # Ingreso de elementos Matriz
 print('Ingresando los elementos de la matriz...')

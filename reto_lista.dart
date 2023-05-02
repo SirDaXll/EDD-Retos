@@ -17,5 +17,10 @@ void main() {
   int l = int.parse(entrada!);
   List<int> miLista = lista(l);
   print(miLista);
-  for (int i = 0; i = lista.length; i++);
+
+  int suma = 0;
+  for (int i in miLista) {
+    suma += i;
+  }
+  print("La suma de los números en la lista es: $suma");
 }
