@@ -1,7 +1,7 @@
 import random, numpy
 
 #def suma(matriz1, matriz2):
-#    matrizResultado1 = matriz1 + matriz2
+#    matrizResultado1 = 
 #    return matrizResultado1
 
 def mule(matrizResultado1, escalar):
