@@ -1,11 +1,17 @@
 import random, numpy
 
-#def suma(matriz1, matriz2):
-#    matrizResultado1 = 
-#    return matrizResultado1
+def suma(matriz1, matriz2):
+    matrizResultado1 = []
+    for i in range(len(matriz1)):
+        fila = []
+        for j in range(len(matriz1[0])):
+            suma = matriz1[i][j] + matriz2[i][j]
+            fila.append(suma)
+        matrizResultado1.append(fila)
+    return matrizResultado1
 
 def mule(matrizResultado1, escalar):
-    matrizResultado2 = matrizResultado1 * escalar
+    matrizResultado2 = numpy.multiply(matrizResultado1, escalar)
     return matrizResultado2
 
 def mul(matrizResultado2, matriz3):
@@ -39,7 +45,7 @@ print('La matriz 2 generada es:\n',m2)
 
 if f1==f2 and c1==c2:
     mr1 = suma(m1, m2)
-    print('La matriz resultante de la suma es:\n',mr1)
+    print('\nLa matriz resultante de la suma es:\n',mr1)
 
 
 print('\nLa matriz resultante de la suma anterior se debe multiplicar por un escalar entero que se debe ingresar (entre 1 y 10) e imprimir el resultado.')
@@ -52,8 +58,8 @@ if e>=1 and e<=10:
 
 print('\nEl resultado de la matriz multiplicada se debe multiplicar nuevamente con otra matriz, la cuál se pedirá ingresar cada uno de sus valores, e imprimir el resultado final.')
 
-f3 = int(input('\nIngrese la cantidad de filas de la matriz 2: '))
-c3 = int(input('Ingrese la cantidad de columnas de la matriz 2: '))
+f3 = int(input('\nIngrese la cantidad de filas de la matriz 3: '))
+c3 = int(input('Ingrese la cantidad de columnas de la matriz 3: '))
 m3 = []
 for i in range(f3):
     mf3 = []
@@ -65,4 +71,4 @@ print('La matriz 3 generada es:\n',m3)
 
 if f1==c3 or c1==f3:
     mr3 = mul(mr2, m3)
-    print('El resultado de la multiplicación de ambas matrices es:\n', mr3)
+    print('\nEl resultado de la multiplicación de ambas matrices es:\n', mr3)
