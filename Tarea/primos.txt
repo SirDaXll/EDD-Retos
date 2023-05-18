@@ -1,0 +1,20 @@
+Algoritmo primos
+	Escribir 'Se pide obtener los números primos comprendidos entre 1 y 500.'
+	inicializar una lista vacía llamada 'primos'
+	Para Cada numero 'num' en el rango de 1 a 500
+		si 'num' es igual a 1
+			continuar con la siguiente iteracion
+		FinSi
+		primo = Verdadero
+		Para Cada numero 'i' en el rango de 2 a 'num'
+			si 'num' es divisible por 'i'
+				primo = Falso
+				romper
+			FinSi
+		FinPara
+		si primo es igual a Verdadero
+			agregar 'num' a la lista 'primos'
+		FinSi
+	FinPara
+	Escribir 'Los números primos que se obtenieron del rango antes entregado son:',primos
+FinAlgoritmo

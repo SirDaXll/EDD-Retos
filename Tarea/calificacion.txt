@@ -1,0 +1,35 @@
+Algoritmo calificacion
+	Escribir 'Se pide mostrar una calificación cualitativa para cada número real, el cuál representa la calificación numérica de un exámen.'
+	Mientras Verdadero Hacer
+		Escribir 'Ingresa la calificación (comprendido entre 1.0 y 7.0): '
+		Leer float cal
+		si cal esta en el rango de 1 a 7
+			si cal es menor que 4
+				Escribir 'Reprobado'
+			FinSi
+			sino si cal esta en el rango de 4 a 4.99
+				Escribir 'Aprobado'
+			FinSi
+			sino si cal esta en el rango de 5 a 5.99
+				Escribir 'Notable'
+			FinSi
+			sino si cal esta en el rango de 6 a 7
+				Escribir 'Sobresaliente'
+			FinSi
+			Mientras Verdadero Hacer
+				Escribir '¿Desea seguir? (Si/No): '
+				Leer aux como cadena en minuscula
+				si aux es igual a 'no' Entonces
+					terminar programa
+				FinSi
+				si aux es distinto de 'si' entonces
+					Escribir 'Ingrese una respuesta correcta.'
+				sino
+					romper
+				FinSi
+			FinMientras
+		FinSi
+		SiNo
+			Escribir 'Ingrese una calificación correcta'
+	FinMientras
+FinAlgoritmo
