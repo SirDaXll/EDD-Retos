@@ -26,19 +26,17 @@ if (f1==c2 or c1==f2):
             elem = random.randint(-10, -5)
             m2[i][j] = elem
 
-    print('\nLa matriz 1 es:\n',m1)
-    print('\nLa matriz 2 es:\n',m2)
+    print('\nLa matriz 1 es:\n', m1)
+    print('\nLa matriz 2 es:\n', m2)
 
     # Multiplicación
     mResultante = multiplicacion(m1, m2)
-    print('\nLa matriz resultado de la multiplicación es:')
-    print(mResultante)
+    print('\nLa matriz resultado de la multiplicación es:\n', mResultante)
 
     # Multiplicación con matriz identidad
     mIdentidad = numpy.identity(3)
     mFinal = multiplicacion(mResultante, mIdentidad)
-    print('\nLa matriz resultado de la multiplicación con uno identidad es:')
-    print(mFinal)
+    print('\nLa matriz resultado de la multiplicación con uno identidad es:\n', mFinal)
 
 else:
     print('La multiplicación de matrices no se puede realizar debido a que no poseen las mismas dimensiones.')
