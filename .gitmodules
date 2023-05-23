@@ -1,3 +1,6 @@
 [submodule "EDD-Guia1"]
 	path = EDD-Guia1
 	url = https://github.com/SirDaXll/EDD-Guia1
+[submodule "Alg-Busq"]
+	path = Alg-Busq
+	url = https://github.com/SirDaXll/Alg-Busq
