@@ -2,8 +2,8 @@ import numpy
 import random
 
 def multiplicacion(m1, m2):
-    mresultante = numpy.multiply(m1, m2)
-    return mresultante
+    mResultante = numpy.multiply(m1, m2)
+    return mResultante
 
 # Ingreso de Matriz 1
 f1 = int(3)
@@ -30,9 +30,15 @@ if (f1==c2 or c1==f2):
     print('\nLa matriz 2 es:\n',m2)
 
     # Multiplicación
-    mresultante = multiplicacion(m1, m2)
+    mResultante = multiplicacion(m1, m2)
     print('\nLa matriz resultado de la multiplicación es:')
-    print(mresultante)
+    print(mResultante)
+
+    # Multiplicación con matriz identidad
+    mIdentidad = numpy.identity(3)
+    mFinal = multiplicacion(mResultante, mIdentidad)
+    print('\nLa matriz resultado de la multiplicación con uno identidad es:')
+    print(mFinal)
 
 else:
     print('La multiplicación de matrices no se puede realizar debido a que no poseen las mismas dimensiones.')
