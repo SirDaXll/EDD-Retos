@@ -44,7 +44,7 @@ print('\nLo que hay en la cola:',atencionBanco,'\n')
 # Se desencolan clientes de la cola (del primero al último)
 while not atencionBanco.esta_vacia():
     cliente = atencionBanco.desencolar()
-    print("Atendiendo cliente:", cliente)
+    print('Atendiendo cliente:', cliente)
 
 # Se imprime la cola
 print('\nLo que hay en la cola:',atencionBanco,'\n')
