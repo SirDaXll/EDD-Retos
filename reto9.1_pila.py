@@ -38,7 +38,7 @@ libros = ['Libro 1', 'Libro 2', 'Libro 3', 'Libro 4', 'Libro 5']
 # Creación objeto (pila)
 librosBiblioteca = pilaLibros()
 
-# Se apilan algunos libros (de abajo hacía arriba)
+# Se apilan algunos libros (de abajo hacía arriba) (libro = itinerador)
 for libro in libros:
     librosBiblioteca.push(libro)
     print('Colocando libro:', libro)
