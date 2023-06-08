@@ -18,7 +18,7 @@ class pilaLibros:
             return self.stack.pop()
         # Pila de libros vacía
         else:
-            raise IndexError("La pila de libros está vacía")
+            raise IndexError('La pila de libros está vacía')
         
     # Método para indicar el estado de la pila
     def __str__(self):
@@ -33,7 +33,7 @@ class pilaLibros:
         return len(self.stack)
 
 # Lista de libros en la biblioteca
-libros = ["Libro 1", "Libro 2", "Libro 3", "Libro 4", "Libro 5"]
+libros = ['Libro 1', 'Libro 2', 'Libro 3', 'Libro 4', 'Libro 5']
 
 # Creación objeto (pila)
 librosBiblioteca = pilaLibros()
@@ -41,7 +41,7 @@ librosBiblioteca = pilaLibros()
 # Se apilan algunos libros (de abajo hacía arriba)
 for libro in libros:
     librosBiblioteca.push(libro)
-    print("Colocando libro:", libro)
+    print('Colocando libro:', libro)
 
 # Se imprime la pila
 print('\nLo que hay en la pila:',librosBiblioteca,'\n')
