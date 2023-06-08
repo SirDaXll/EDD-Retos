@@ -20,7 +20,7 @@ class pilaLibros:
         else:
             raise IndexError("La pila de libros está vacía")
         
-    # Método para entregar la pila
+    # Método para indicar el estado de la pila
     def __str__(self):
         return str(self.stack)
     
